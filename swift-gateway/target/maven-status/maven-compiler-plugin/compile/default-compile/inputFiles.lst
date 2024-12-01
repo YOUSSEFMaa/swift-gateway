@@ -1,0 +1,11 @@
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\config\MQConfig.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\controller\PartnerController.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\controller\SwiftPaymentMessageController.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\listener\MQListener.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\model\Partner.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\model\SwiftPaymentMessage103.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\repository\PartnerRepository.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\repository\SwiftPaymentMessageRepository.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\service\PartnerService.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\service\SwiftPaymentMessageService.java
+E:\Springtmp\KATA\swift-gateway\src\main\java\com\bank\swift_gateway\SwiftGatewayApplication.java

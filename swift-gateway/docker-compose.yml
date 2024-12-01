@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  swift-gateway:
+    image: swift-gateway:latest
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:testdb
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=password
+      - IBM_MQ_QUEUE_MANAGER=QM1
+      - IBM_MQ_HOST=ibm-mq
+      - IBM_MQ_PORT=1414
+      - IBM_MQ_USER=app
+      - IBM_MQ_PASSWORD=passw0rd
+    depends_on:
+      - ibm-mq
+
+  ibm-mq:
+    image: ibmcom/mq
+    environment:
+      LICENSE: accept
+      MQ_QMGR_NAME: QM1
+    ports:
+      - "1414:1414"
+      - "9443:9443"
+    volumes:
+      - mqdata:/var/mqm
+
+volumes:
+  mqdata:
